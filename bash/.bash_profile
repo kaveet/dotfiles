@@ -15,6 +15,9 @@ alias apps="cd /Applications"
 alias g="git"
 alias bp="subl ~/.bash_profile"
 
+# Open all conflicting files in Sublime Text
+alias gf=git diff --name-only | uniq | xargs subl
+
 # Restart Bluetooth Audio Daemon
 # Useful when headphones are stuttering
 function killbt() {

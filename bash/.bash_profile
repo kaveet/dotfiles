@@ -15,13 +15,6 @@ alias apps="cd /Applications"
 alias g="git"
 alias bp="subl ~/.bash_profile"
 
-# Create a quick note in Vim
-function note() {
-  dt=`date '+%Y-%m-%d %H:%M:%S'`
-  dt+=".md"
-  vim "$dt"
-}
-
 # Restart Bluetooth Audio Daemon
 # Useful when headphones are stuttering
 function killbt() {
